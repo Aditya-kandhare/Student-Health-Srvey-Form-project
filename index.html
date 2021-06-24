@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!-- This is an HTML comment -->
+<html>
+<!-- This is the title of the page-->
+<head>
+<title>Studenr Health Survey</title>
+</head>
+<body>
+<!-- conecting it to a ref link -->
+<form action="results.html" method = "GET">
+<!-- This is to keep the alignment central-->
+<div align="center">
+<!--Heading of the form-->
+<h1>Student Health Survey form</h1>
+Enter your name:
+<!-- Input and size -->
+<input type="text" name="UserName" size=30 maxlength=30 value="">
+<!--Adds spaces -->
+</br></br>
+Enter your department:
+<input type="text" name="Deptt" size=30 maxlength=30 value=""> 
+</br> </br>
+Do you have any covid-19 related symtoms?:
+<!-- For writing long description we use this format -->
+<textarea name="Comments" cols=30 rows=2></textarea> </br> </br>
+Have you taken Vaccine?
+<!-- Radio buttons are used to take a selective input -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</p>
+Which vaccine have you taken?
+<p>
+<!-- Here we have checkbox selection method to select one of many option -->
+<input type="checkbox" name="Covaxin">Covaxin
+<input type="checkbox" name="Covishield">Covishield
+<input type="checkbox" name="Sputnik V">Sputnik V
+<input type="checkbox" name="NONE">NONE
+</p>
+Are you attending online classes?
+<!-- Radio buttons  -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</br></br>
+Which platform are you using?
+<!-- A dropbox to select one option -->
+<select name="moviepref" ><option>
+<option value=1 selected = "true">Laptop
+<option value=2 >Mobile
+<option value=3 > Other
+<option value=3 > Not attending
+</option>
+</select>
+</br></br>
+<!-- This is the way to represent a link in the form which will lead to another page  -->
+<a href="https://www.cowin.gov.in/home">Click here for any covid-19 query</a>
+</br></br>
+<!-- To submit the form -->
+<input type=submit value="Submit form">
+</div>
+</form>
+</body>
+</html>
